@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Interactivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-100 to-blue-100">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-600 to-blue-600 p-4 shadow-lg mb-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-2 justify-center">
+            <a href="index.html" class="nav-btn">
+                <span class="icon">🏠</span> Inicio
+            </a>
+            <a href="imagen.html" class="nav-btn">
+                <span class="icon">🖼️</span> Imágenes
+            </a>
+            <a href="audio.html" class="nav-btn">
+                <span class="icon">🎵</span> Audio
+            </a>
+            <a href="video.html" class="nav-btn">
+                <span class="icon">🎬</span> Video
+            </a>
+            <a href="embebido.html" class="nav-btn">
+                <span class="icon">📄</span> Embebido
+            </a>
+            <a href="opcional.html" class="nav-btn active">
+                <span class="icon">✨</span> Canvas
+            </a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container mx-auto px-4 pb-8">
+        <div class="bg-white/80 backdrop-blur rounded-xl shadow-xl p-8">
+            <h1 class="text-4xl font-bold text-purple-600 mb-6">Canvas Interactivo</h1>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Dibujo con Canvas HTML5</h2>
+                <div class="flex justify-center">
+                    <canvas
+                        id="myCanvas"
+                        width="400"
+                        height="200"
+                        class="border-2 border-purple-600 rounded-lg">
+                    </canvas>
+                </div>
+                <p class="mt-4 text-gray-600 text-center">
+                    Este elemento utiliza la API Canvas de HTML5 para crear gráficos dinámicos
+                </p>
+            </div>
+        </div>
+        
+        <footer class="text-center mt-8 text-gray-600">
+            <p>© 2024 Proyecto Multimedia - Diseñado por Leila Ruiz</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Inicializar canvas cuando la página cargue
+        window.addEventListener('load', function() {
+            initCanvas();
+        });
+    </script>
+</body>
+</html>

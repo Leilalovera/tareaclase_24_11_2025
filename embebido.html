@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Embebido</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-purple-100 to-blue-100">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-600 to-blue-600 p-4 shadow-lg mb-6">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-2 justify-center">
+            <a href="index.html" class="nav-btn">
+                <span class="icon">🏠</span> Inicio
+            </a>
+            <a href="imagen.html" class="nav-btn">
+                <span class="icon">🖼️</span> Imágenes
+            </a>
+            <a href="audio.html" class="nav-btn">
+                <span class="icon">🎵</span> Audio
+            </a>
+            <a href="video.html" class="nav-btn">
+                <span class="icon">🎬</span> Video
+            </a>
+            <a href="embebido.html" class="nav-btn active">
+                <span class="icon">📄</span> Embebido
+            </a>
+            <a href="opcional.html" class="nav-btn">
+                <span class="icon">✨</span> Canvas
+            </a>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container mx-auto px-4 pb-8">
+        <div class="bg-white/80 backdrop-blur rounded-xl shadow-xl p-8">
+            <h1 class="text-4xl font-bold text-purple-600 mb-6">Contenido Embebido</h1>
+            
+            <!-- Video de YouTube -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                <h2 class="text-2xl font-bold mb-4">Video de YouTube</h2>
+                <div class="relative pb-[56.25%] h-0">
+                    <iframe
+                        class="absolute top-0 left-0 w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Mapa de Google -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
+                <h2 class="text-2xl font-bold mb-4">Mapa de Google</h2>
+                <iframe
+                    class="w-full h-96 rounded-lg"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.4951892417756!2d-57.575926!3d-25.282197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945da862b55cd8b3%3A0x6b38b88c6559cc96!2sAsunci%C3%B3n%2C%20Paraguay!5e0!3m2!1sen!2s!4v1234567890"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- PDF Embebido -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">PDF Embebido</h2>
+                <iframe
+                    class="w-full h-96 rounded-lg"
+                    src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">
+                </iframe>
+            </div>
+
+        </div>
+        
+        <footer class="text-center mt-8 text-gray-600">
+            <p>© 2024 Proyecto Multimedia - Diseñado por Leila Ruiz</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
